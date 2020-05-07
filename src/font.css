@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Ubuntu-Regular';
+    src: url('/public/fonts/Ubuntu-Regular.ttf');
+  }
+  
+  @font-face {
+    font-family: 'Ubuntu-Bold';
+    src: url('/public/fonts/Ubuntu-Bold.ttf'); 
+  }
+
+  * {
+    font-family: 'Ubuntu-Regular';
+    margin: 0px; 
+    padding: 0px; 
+    box-sizing: border-box;
+}

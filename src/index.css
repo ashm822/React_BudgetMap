@@ -1,13 +1,289 @@
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: 'Ubuntu','Segoe UI', 'Roboto', 
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+Nav {
+  font-family: 'Ubuntu', 'Roboto';
+}
+
+
+/* ------------------------------------------------------- */
+@font-face {
+  font-family: 'Ubuntu-Regular';
+  src: url('/public/fonts/Ubuntu-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Ubuntu-Bold';
+  src: url('/public/fonts/Ubuntu-Bold.ttf'); 
+}
+
+
+* {
+    font-family: 'Ubuntu-Regular';
+    margin: 0px; 
+    padding: 0px; 
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: ubuntu-regular, sans-serif;
+    
+}
+
+/*---------------------------------------------*/
+a {
+    font-family: 'Ubuntu-Regular';
+    font-size: 14px;
+    line-height: 1.7;
+    color: #666666;
+    margin: 0px;
+    transition: all 0.4s;
+    
+}
+
+a:focus {
+    outline: none !important;
+}
+
+a:hover {
+    text-decoration: none;
+    color:#042e17;
+}
+
+/*---------------------------------------------*/
+h1,h2,h3,h4,h5,h6 {
+    margin: 0px;
+}
+
+p {
+    font-family: 'Ubuntu-Regular';
+    font-size: 14px;
+    line-height: 1.7;
+    color: #666666;
+    margin: 0px;
+}
+
+ul, li {
+    margin: 0px;
+    list-style-type: none;
+}
+
+
+/* smooth text fields border */
+input {
+    outline: none;
+    border: none;
+}
+
+
+
+textarea {
+  outline: none;
+  border: none;
+}
+
+textarea:focus, input:focus {
+  border-color: transparent !important;
+}
+
+
+
+
+/*---------------------------------------------*/
+button {
+    outline:none;
+    border:none;
+    background: transparent;
+}
+
+button:hover {
+    cursor: pointer;  
+}
+
+iframe {
+    border: none !important;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ Utility ]*/
+.txt1 {
+  font-family: tahoma;
+  font-size: 15px;
+  color: #999999;
+  line-height: 1.4;
+}
+
+
+
+
+/*//////////////////////////////////////////////////////////////////
+[ login ]*/
+
+
+.container-login {
+  
+  width: 100%;  
+  min-height: 60vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: relative; 
+  
+}
+
+.login-wrap {
+  width: 360px;
+  background: #fff;
+  border-radius:20px;
+  overflow: hidden;
+  box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+  padding: 0 0 10px;
+}
+
+
+/*==================================================================
+[ Form ]*/
+
+.login-form {
+  width: 100%;
+  position: relative;
+
+}
+
+.login-header {
+  color: #fff;
+  line-height: .75;
+  text-align: center;
+  display: block;
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: grey;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/*------------------------------------------------------------------
+[ Input ]*/
+
+.login-form {
+  width: 85%;
+  background-color: rgb(224, 218, 218);
+  border-radius: 25px;
+  position: relative;
+  z-index: 0;
+  margin-left: 25px;
+  margin-top: 30px;
+  
+}
+
+.login-input {
+  font-family: 'Ubuntu-Bold';
+  font-size: 15px;
+  color: #1b3815;
+  line-height: .5;
+  position: relative;
+  display: block;
+  width: 10%;
+  height: 15px;
+  background: #ebebeb;
+  border-radius: 25px;
+  padding: 0 35px 0 35px;
+}
+
+
+
+
+
+
+/*------------------------------------------------------------------
+[ Button ]*/
+
+.container-login {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.login-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  margin: 0 25px 0 25px;
+  width: 85%;
+  height: 50px;
+  background-color: #57b846;
+  border-radius: 25px;
+  font-family: 'Ubuntu-Bold';
+  font-size: 15px;
+  color: #fff;
+  line-height: .5;
+  text-transform: uppercase;
+  transition: all 0.4s;
+}
+
+.login-btn :hover {
+  background-color: #042e17;
+  color: white
+}
+
+
+/* ---------------------------------------- */
+.sidenav {
+  height:60%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 6;
+  left: 0;
+  background-color: lightgray;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 20px;
+  margin-top: 80px;
+  
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #57b846;
+;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.signUp :hover {
+  background-color: #57b846;
+}
+
+*{
+  font-family: 'Ubuntu-Bold';
 }
