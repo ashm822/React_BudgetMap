@@ -11,7 +11,7 @@
     "font-awesome": "^4.7.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
+    "react-scripts": "5.0.1",
     "reactstrap": "^8.4.1",
     "ubuntu": "^2.0.0"
   },
